@@ -1,6 +1,6 @@
-import {Component} from "@angular/core";
+import {Component} from '@angular/core';
 @Component({
-    selector: "user-info",
+    selector: 'user-info',
     template: `
       <h1>User Info</h1>
     `
