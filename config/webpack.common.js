@@ -11,7 +11,12 @@ module.exports = {
     },
 
     resolve: {
-        extensions: ['', '.ts', '.js']
+        extensions: ['', '.ts', '.js'],
+        modulesDirectories: [
+          '.',
+          'node_modules',
+          'src/app/'          
+        ]
     },
 
     module: {
