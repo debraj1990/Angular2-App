@@ -1,0 +1,17 @@
+<div class="container">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th *ngFor="let field of fields" (click)="sortBy(field.key)">{{field.value}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of (list | orderby: [sortByColumn])">
+              <td *ngFor="let field of fields">
+                {{user[field.key]}}
+              </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

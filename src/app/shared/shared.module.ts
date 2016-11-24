@@ -1,9 +1,17 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import {OrderByPipe} from './pipes/orderby.pipe';
 
 @NgModule({
     imports: [CommonModule],
-    exports: [CommonModule, FormsModule]
+    declarations: [OrderByPipe],
+    exports: [
+        CommonModule,
+        FormsModule,
+        ReactiveFormsModule,
+        OrderByPipe
+    ]
 })
 export class SharedModule { }

@@ -3,10 +3,10 @@ import { CommonModule }      from '@angular/common';
 import { HttpModule, JsonpModule } from '@angular/http';
 
 import { HTTPService }       from './services/http.service';
-
+import { DataParsingService } from './utilities/data-parsing.service';
 @NgModule({
     imports: [HttpModule, JsonpModule],
-    providers: [HTTPService]
+    providers: [HTTPService, DataParsingService]
 })
 export class CoreModule {
     constructor( @Optional() @SkipSelf() parentModule: CoreModule) {

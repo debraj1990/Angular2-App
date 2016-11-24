@@ -1,8 +1,6 @@
 import {Component} from '@angular/core';
 @Component({
     selector: 'user-info',
-    template: `
-      <h1>User Info</h1>
-    `
+    templateUrl: './user-info.template.html'
 })
-export class UserDetailsComponent {}
+export class UserInfoComponent {}

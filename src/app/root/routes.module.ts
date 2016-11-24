@@ -19,8 +19,8 @@ export const routes: Routes = [
         }
     },
     {
-        path: 'userDetails',
-        loadChildren: '../views/user-details/userDetails.module#UserDetailsModule'
+        path: 'userInfo',
+        loadChildren: '../views/user-info/user-info.module#UserInfoModule'
     }
 ]
 
